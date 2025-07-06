@@ -14,6 +14,6 @@ class CustomUserAdmin(UserAdmin):
         ('Additional Info', {'fields': ('email', 'first_name', 'last_name', 'bio', 'birth_date')}),
     )
 
-admin.site.unregister(User)
+# admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
 # Register your models here.
